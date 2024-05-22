@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "d57zblVhm06Tmx+hqggKWqnqVeM0pHG6vy4olx47Gj0tE52bPdi+stzRyas1ivJvZ2AdYZEOLOm12uhpiN+WEw==",
+  "dgSpecHash": "hLTKnUSVk44cR8ZIZ1sYajFsSHA5hzjuy8qZUeVGEn3e+65XAoW+7IpDPwZeFfGXWNZPEfzh3Q8pPfz8xVMMQA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\cux\\OneDrive\\Pulpit\\Fitnesiara\\FitnessApp\\Fitness.Models\\Fitness.Models.csproj",
+  "projectFilePath": "C:\\Users\\cux\\OneDrive\\Pulpit\\GitRepo\\FitnessApp\\Fitness.Models\\Fitness.Models.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cux\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.2.0\\microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",
     "C:\\Users\\cux\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

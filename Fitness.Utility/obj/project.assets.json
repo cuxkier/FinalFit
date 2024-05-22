@@ -762,11 +762,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cux\\OneDrive\\Pulpit\\Fitnesiara\\FitnessApp\\Fitness.Utility\\Fitness.Utility.csproj",
+      "projectUniqueName": "C:\\Users\\cux\\OneDrive\\Pulpit\\GitRepo\\FitnessApp\\Fitness.Utility\\Fitness.Utility.csproj",
       "projectName": "Fitness.Utility",
-      "projectPath": "C:\\Users\\cux\\OneDrive\\Pulpit\\Fitnesiara\\FitnessApp\\Fitness.Utility\\Fitness.Utility.csproj",
+      "projectPath": "C:\\Users\\cux\\OneDrive\\Pulpit\\GitRepo\\FitnessApp\\Fitness.Utility\\Fitness.Utility.csproj",
       "packagesPath": "C:\\Users\\cux\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cux\\OneDrive\\Pulpit\\Fitnesiara\\FitnessApp\\Fitness.Utility\\obj\\",
+      "outputPath": "C:\\Users\\cux\\OneDrive\\Pulpit\\GitRepo\\FitnessApp\\Fitness.Utility\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\cux\\AppData\\Roaming\\NuGet\\NuGet.Config",

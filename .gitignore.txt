@@ -1,0 +1,58 @@
+# Katalogi i pliki generowane przez Visual Studio
+.vs/
+bin/
+obj/
+*.user
+*.suo
+
+# Pliki wygenerowane podczas budowania projektu
+*.dll
+*.exe
+*.pdb
+*.cache
+*.log
+*.bin
+*.bak
+
+# Pliki tymczasowe
+[Tt]emp/
+[Tt]emp[0-9]/
+obj/
+[Ii]ntermediate/
+*.swp
+*.bak
+*.cache
+*.log
+
+# pliki Resharper
+_ReSharper*/
+*.resharper
+*.ReSharper*/
+*.DotSettings.user
+
+# Katalog testów
+testresults
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# Plik projektu Visual Studio
+*.csproj.user
+*.cache
+
+# Pliki służące do tworzenia projektu (jeśli używasz narzędzia MSBuild)
+*.exe
+*.dll
+*.pdb
+*.log
+*.txt
+*.doc
+*.tmp
+*.docstates
+*.bak
+*.Cache
+*.db
+*.db-shm
+*.db-wal
+
+# Plik konfiguracyjny aplikacji
+appsettings.json

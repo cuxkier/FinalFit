@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8xrvi9NbJ3ug9R7DyLCYnepSBkpv/5EMYqBechhsnMifWweRdNjEnZFcSc/IRgwEJg2bNst7S84dGGVM5nPS3g==",
+  "dgSpecHash": "OFJOXr768EkFe2yzESgmTqqoV11kTUIsob86+qqNOQiH2qDBZVi6rbIeRfBedb/iquj2DXbaRySANa7T7/7isg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\cux\\OneDrive\\Pulpit\\Fitnesiara\\FitnessApp\\FitnessWeb\\FitnessWeb.csproj",
+  "projectFilePath": "C:\\Users\\cux\\OneDrive\\Pulpit\\GitRepo\\FitnessApp\\FitnessWeb\\FitnessWeb.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cux\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\cux\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

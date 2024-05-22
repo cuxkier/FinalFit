@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cux\\OneDrive\\Pulpit\\Fitnesiara\\FitnessApp\\Fitness.Models\\Fitness.Models.csproj": {}
+    "C:\\Users\\cux\\OneDrive\\Pulpit\\GitRepo\\FitnessApp\\Fitness.Models\\Fitness.Models.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cux\\OneDrive\\Pulpit\\Fitnesiara\\FitnessApp\\Fitness.Models\\Fitness.Models.csproj": {
+    "C:\\Users\\cux\\OneDrive\\Pulpit\\GitRepo\\FitnessApp\\Fitness.Models\\Fitness.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cux\\OneDrive\\Pulpit\\Fitnesiara\\FitnessApp\\Fitness.Models\\Fitness.Models.csproj",
+        "projectUniqueName": "C:\\Users\\cux\\OneDrive\\Pulpit\\GitRepo\\FitnessApp\\Fitness.Models\\Fitness.Models.csproj",
         "projectName": "Fitness.Models",
-        "projectPath": "C:\\Users\\cux\\OneDrive\\Pulpit\\Fitnesiara\\FitnessApp\\Fitness.Models\\Fitness.Models.csproj",
+        "projectPath": "C:\\Users\\cux\\OneDrive\\Pulpit\\GitRepo\\FitnessApp\\Fitness.Models\\Fitness.Models.csproj",
         "packagesPath": "C:\\Users\\cux\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cux\\OneDrive\\Pulpit\\Fitnesiara\\FitnessApp\\Fitness.Models\\obj\\",
+        "outputPath": "C:\\Users\\cux\\OneDrive\\Pulpit\\GitRepo\\FitnessApp\\Fitness.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\cux\\AppData\\Roaming\\NuGet\\NuGet.Config",
