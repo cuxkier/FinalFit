@@ -85,12 +85,32 @@
       "PackagePath": "staticwebassets\\images\\lawn_leaf.jpg"
     },
     {
+      "Id": "C:\\Users\\cux\\OneDrive\\Pulpit\\GitRepo\\FitnessApp\\FitnessWeb\\wwwroot\\js\\bialDiet.js",
+      "PackagePath": "staticwebassets\\js\\bialDiet.js"
+    },
+    {
       "Id": "C:\\Users\\cux\\OneDrive\\Pulpit\\GitRepo\\FitnessApp\\FitnessWeb\\wwwroot\\js\\diet.js",
       "PackagePath": "staticwebassets\\js\\diet.js"
     },
     {
+      "Id": "C:\\Users\\cux\\OneDrive\\Pulpit\\GitRepo\\FitnessApp\\FitnessWeb\\wwwroot\\js\\karniDiet.js",
+      "PackagePath": "staticwebassets\\js\\karniDiet.js"
+    },
+    {
+      "Id": "C:\\Users\\cux\\OneDrive\\Pulpit\\GitRepo\\FitnessApp\\FitnessWeb\\wwwroot\\js\\ketoDiet.js",
+      "PackagePath": "staticwebassets\\js\\ketoDiet.js"
+    },
+    {
       "Id": "C:\\Users\\cux\\OneDrive\\Pulpit\\GitRepo\\FitnessApp\\FitnessWeb\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\cux\\OneDrive\\Pulpit\\GitRepo\\FitnessApp\\FitnessWeb\\wwwroot\\js\\wegaDiet.js",
+      "PackagePath": "staticwebassets\\js\\wegaDiet.js"
+    },
+    {
+      "Id": "C:\\Users\\cux\\OneDrive\\Pulpit\\GitRepo\\FitnessApp\\FitnessWeb\\wwwroot\\js\\wegeDiet.js",
+      "PackagePath": "staticwebassets\\js\\wegeDiet.js"
     },
     {
       "Id": "C:\\Users\\cux\\OneDrive\\Pulpit\\GitRepo\\FitnessApp\\FitnessWeb\\wwwroot\\lib\\bootstrap\\LICENSE",

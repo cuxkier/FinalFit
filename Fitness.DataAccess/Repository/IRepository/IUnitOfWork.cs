@@ -15,6 +15,8 @@ namespace Fitness.DataAccess.Repository.IRepository
         IOrderDetailRepository OrderDetail { get; }
         IOrderHeaderRepository OrderHeader { get; }
 
+        IProgressRepository Progress { get; }
+
         void Save();
     }
 }

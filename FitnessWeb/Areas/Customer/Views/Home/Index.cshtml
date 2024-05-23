@@ -1,7 +1,10 @@
-﻿Adrianna Miemietz
-<head>
+﻿<head>
     <style>
         .text-bs-pink {
+            color: #e83283;
+        }
+
+        p {
             color: #e83283;
         }
 
@@ -11,6 +14,23 @@
             display: block; /* Ustaw obrazki jako bloki, aby można było stosować marginesy */
             margin: 0 auto; /* Wyśrodkuj obrazki poziomo */
         }
+
+        <style >
+        .exercise-card {
+            margin-bottom: 30px;
+        }
+
+        .exercise-card img {
+            height: 100px;
+            width: 100px;
+            object-fit: cover;
+        }
+
+        .exercise-card .card-title,
+        .exercise-card .card-text {
+            color: white;
+        }
+
     </style>
 </head>
 <br />
@@ -50,52 +70,67 @@
     </div>
     <div class="col-md-4 align-items-center">
         <div class="card border-0 p-3 shadow border-top border-5 rounded">
-            <div class="card-body pb-0">
+            <div class="card-body pb-0 exercise-card">
                 <div class="pl-1">
-                    <p class="card-title h5 text-white opacity-75 text-uppercase text-center">Obliczasz swoje BMI</p>
+                    <p class="h5 card-title opacity-75 text-uppercase text-center">Obliczasz swoje BMI<br /><br /></p>
                 </div>
                 <div class="pl-1">
                     <p class="card-subtitle h12 text-center text-dark opacity-75">
                         <img src="https://cdn2.iconfinder.com/data/icons/miscellaneous-31/60/calculator-1024.png" class="card-img-top rounded">
                     </p>
                 </div>
-
+                <div class="pl-1">
+                    <p class="card-text h6 text-white opacity-75 text-center"><br /><br />Podaj swoje wymiary, a my obliczymy Twoje BMI online, aby pomóc Ci zrozumieć stan Twojej masy ciała i zaproponować odpowiednie kroki w kierunku zdrowia.<br /></p>
+                </div>
             </div>
         </div>
     </div>
     <div class="col-md-4 align-items-center">
         <div class="card border-0 p-3 shadow border-top border-5 rounded">
-            <div class="card-body pb-0">
+            <div class="card-body pb-0 exercise-card">
                 <div class="pl-1">
-                    <p class="card-title h5 text-dark opacity-75 text-uppercase text-center">Adam Mikołajczak</p>
+                    <p class="h5 card-title opacity-75 text-uppercase text-center">Wybierasz diety<br /><br /></p>
                 </div>
                 <div class="pl-1">
-                    <p class="card-subtitle h12 text-center text-dark opacity-75" ">
-
+                    <p class="card-subtitle h12 text-center text-dark opacity-75">
+                        <img src="https://cdn3.iconfinder.com/data/icons/streamline-icon-set-free-pack/48/Streamline-99-512.png" class="card-img-top rounded">
                     </p>
                 </div>
-
+                <div class="pl-1">
+                    <p class="card-text h6 text-white opacity-75 text-center"><br /><br />Określ swoje preferencje żywieniowe, a my przygotujemy dla Ciebie spersonalizowany plan diety online, idealnie dopasowany do Twoich potrzeb.<br /></p>
+                </div>
             </div>
         </div>
     </div>
     <div class="col-md-4 align-items-center">
         <div class="card border-0 p-3 shadow border-top border-5 rounded">
-            <div class="card-body pb-0">
+            <div class="card-body pb-0 exercise-card">
                 <div class="pl-1">
-                    <p class="card-title h5 text-dark opacity-75 text-uppercase text-center">Adam Mikołajczak</p>
+                    <p class="h5 card-title opacity-75 text-uppercase text-center">Przeglądasz ćwiczenia<br /><br /></p>
                 </div>
                 <div class="pl-1">
-                    <p class="card-subtitle h12 text-center text-dark opacity-75" ">
-                        <b>Doświadczenie:</b><br>5 lat<br>
-                        <b>Specjalizacja:</b><br>Trening siłowy i kondycyjny<br>
-                        <b>Ulubione ćwiczenie:</b><br>Martwy ciąg<br>
-                        <b>Kontakt:</b><br><i class="bi bi-facebook"></i> <i class="bi bi-instagram"></i> <i class="bi bi-twitter-x"></i><br>
-
+                    <p class="card-subtitle h12 text-center text-dark opacity-75">
+                        <img src="https://cdn3.iconfinder.com/data/icons/sports-17/24/Weight-Lift-512.png" class="card-img-top rounded">
                     </p>
                 </div>
-
+                <div class="pl-1">
+                    <p class="card-text h6 text-white opacity-75 text-center"><br /><br />Pomożemy Ci przeglądać odpowiednie ćwiczenia online, dostosowane do Twoich potrzeb i umiejętności. W zakładce Atlas Ćwiczeń możesz znaleźć instruktaż.<br /></p>
+                </div>
             </div>
         </div>
+    </div>
+    <div>
+        <p class="h3 text-white opacity-75 text-center"><br /> Najczęściej zadawane pytania:<br /></p>
+        <p class="h6 text-white opacity-75 text-justify">Do czego służy kalkulator BMI?</p>
+        <p class="h7 text-white opacity-75 text-justify">Kalkulator BMI służy jako cenny wskaźnik ogólnego stanu zdrowia organizmu, który zapewnia użytkownikom nadzór na ich aktualną kondycją fizyczną. Wylicza się go dzieląc masę (kg) przez wzrost (cm). Otrzymany wynik pokazuje czy kondycja naszego ciała jest w normie lub czy mamy do czynienia z nadwagą/niedowagą.<br /><br /></p>
+        <p class="h6 text-white opacity-75 text-justify">Czy aplikacja wymaga płatnej subskrypcji?</p>
+        <p class="h7 text-white opacity-75 text-justify">Założenie konta i korzystanie z jej funkcji jest całkowicie darmowe. Płatność odbywa się jedynie w momencie zakupu diety lub planu treningowego od jednego z naszych trenerów.<br /><br /></p>
+        <p class="h6 text-white opacity-75 text-justify">Jakie rodzaje diet są dostępne do wyboru?</p>
+        <p class="h7 text-white opacity-75 text-justify">Aplikacja oferuje między innymi diety klasyczne, ketogeniczne oraz wegetariańskie. Podzielone są one w zależności od kaloryczności. Więcej informacji można znaleźć w zakładce „Diety”.<br /><br /></p>
+        <p class="h6 text-white opacity-75 text-justify">W jaki sposób mogę monitorować swoje postępy?</p>
+        <p class="h7 text-white opacity-75 text-justify">Po założeniu konta użytkownik ma dostęp do dziennika parametrów. Funkcja ta pozwala na dodawanie aktualnych pomiarów swojego ciała. Wyświetlają się one w kolejności chronologicznie, dzięki czemu użytkownik ma stały dostęp do wszystkich przeszłych wpisów i może na bieżąco monitorować swoje postępy.<br /><br /></p>
+        <p class="h6 text-white opacity-75 text-justify">Czy aplikacja wysyła dużo powiadomień?</p>
+        <p class="h7 text-white opacity-75 text-justify">Nasza aplikacja nie wysyła żadnych powiadomień, aby nie rozpraszać użytkownika. Ten wybór projektu zapewnia skoncentrowane i nieprzerwane doświadczenie osobom korzystającym z aplikacji.<br /><br /></p>
     </div>
 
 </div>

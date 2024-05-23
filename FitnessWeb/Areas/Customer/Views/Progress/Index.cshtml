@@ -1,0 +1,19 @@
+﻿@model IEnumerable<Fitness.Models.Progress>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Data</th>
+            <th>Waga (kg)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Date.ToShortDateString()</td>
+                <td>@item.Weight</td>
+            </tr>
+        }
+    </tbody>
+</table>
