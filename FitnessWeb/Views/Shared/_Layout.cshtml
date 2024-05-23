@@ -39,24 +39,24 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li class="nav-item">
-                                    <a class="dropdown-item" asp-area="Customer" asp-controller="DietsCategory" asp-action="Keto">Dieta Ketogeniczna</a>
+                                    <a class="dropdown-item" asp-area="Customer" asp-controller="DietsCategory" asp-action="Index">Dieta Ketogeniczna</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="dropdown-item" asp-area="Customer" asp-controller="DietsCategory" asp-action="Wega">Dieta Wegańska</a>
+                                    <a class="dropdown-item" asp-area="Customer" asp-controller="DietsCategory" asp-action="Index">Dieta Wegańska</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="dropdown-item" asp-area="Customer" asp-controller="DietsCategory" asp-action="Wege">Dieta Wegetariańska</a>
+                                    <a class="dropdown-item" asp-area="Customer" asp-controller="DietsCategory" asp-action="Index">Dieta Wegetariańska</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="dropdown-item" asp-area="Customer" asp-controller="DietsCategory" asp-action="Karni">Dieta Karniworska</a>
+                                    <a class="dropdown-item" asp-area="Customer" asp-controller="DietsCategory" asp-action="Index">Dieta Karniworska</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="dropdown-item" asp-area="Customer" asp-controller="DietsCategory" asp-action="Bial">Dieta Wysokobiałkowa</a>
+                                    <a class="dropdown-item" asp-area="Customer" asp-controller="DietsCategory" asp-action="Index">Dieta Wysokobiałkowa</a>
                                 </li>
-@*                                <li><hr class="dropdown-divider"></li>
+                                @*                            	<li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>*@
                             </ul>
-                        </li>                        
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="Customer" asp-controller="Trainers" asp-action="Index">Nasi trenerzy</a>
                         <li class="nav-item">
@@ -84,7 +84,7 @@
                                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
                             </li>
-                        }            
+                        }
                     </ul>
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
@@ -105,17 +105,20 @@
         </main>
     </div>
 
-    @*<footer class="border-top footer text-muted fixed-bottom">
-        <div class="text-center">
-            Zapraszamy na <i class="bi bi-facebook"></i>
-    <li class="nav-item">
-    <a class="nav-link text-dark" asp-area="Customer" asp-controller="Home" asp-action="Privacy">FAQ</a>
-    </li>
-    <li class="nav-item">
-    <a class="nav-link text-dark" asp-area="Customer" asp-controller="Home" asp-action="Privacy">Kontakt</a>
-    </li>
+    <footer class="footer-card border-top text-muted border-3 d-flex flex-column max-vh-100 bg-primary bg-opacity-25">
+        <div class="row pb-2">
+            <div class="col-md-6 text-center">
+                Zapraszamy na <i class="bi bi-facebook"></i><br />
+                Autorzy:<br /> Adrianna Miemietz<br /> Mikołaj Miklas<br /> Paulina Kowalewska
+            </div>
+            <div class="col-md-6 text-center">
+                <a class="nav-link text-light" asp-area="Customer" asp-controller="Home" asp-action="Privacy">FAQ</a>
+                <a class="nav-link text-light" asp-area="Customer" asp-controller="Home" asp-action="Privacy">Kontakt</a>
+                <a class="nav-link text-light" asp-area="Customer" asp-controller="Home" asp-action="Privacy">Polityka prywatności</a>
+                <a class="nav-link text-light" asp-area="Customer" asp-controller="Home" asp-action="Privacy">Regulamin</a>
+            </div>
         </div>
-    </footer>*@
+    </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -126,3 +129,8 @@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+
+
+
+
+

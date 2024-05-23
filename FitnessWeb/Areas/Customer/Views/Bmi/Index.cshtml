@@ -3,31 +3,36 @@
 @{
     ViewData["Title"] = "Bmi Calculator";
 }
+<p class="h3 text-white opacity-75 text-uppercase text-center">Kalkulator BMI<br /><br /></p>
+<div class="card border-0 p-3 shadow border-top border-5 rounded">
+    @if (ViewBag.ErrorMessage != null)
+    {
+        <div class="alert alert-danger" role="alert">
+            @ViewBag.ErrorMessage
+        </div>
+    }
+    <div class="row pb-1">
+        <form method="post" asp-action="Calculate">
+            <div class="form-group">
+                <label for="weight">Waga (kg):</label>
+                <input type="number" name="weight" id="weight" class="form-control" required>
+                <br />
+            </div>
+            <div class="form-group">
+                <label for="height">Wzrost (m):</label>
+                <input type="number" step="0.01" name="height" id="height" class="form-control" required>
+                <br />
+            </div>
+            <div class="form-group">
+                <label for="gender">Płeć:</label>
+                <select name="gender" id="gender" class="form-control" required>
+                    <option value="male">Mężczyzna</option>
+                    <option value="female">Kobieta</option>
+                </select>
+                <br />
+            </div>
+            <button type="submit" class="btn btn-primary">Oblicz BMI</button>
+        </form>
+    </div>
+</div>
 
-<h2>BMI Calculator</h2>
-
-@if (ViewBag.ErrorMessage != null)
-{
-    <div class="alert alert-danger" role="alert">
-        @ViewBag.ErrorMessage
-    </div>
-}
-
-<form method="post" asp-action="Calculate">
-    <div class="form-group">
-        <label for="weight">Weight (kg):</label>
-        <input type="number" name="weight" id="weight" class="form-control" required>
-    </div>
-    <div class="form-group">
-        <label for="height">Height (m):</label>
-        <input type="number" step="0.01" name="height" id="height" class="form-control" required>
-    </div>
-    <div class="form-group">
-        <label for="gender">Gender:</label>
-        <select name="gender" id="gender" class="form-control" required>
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-        </select>
-    </div>
-    <button type="submit" class="btn btn-primary">Calculate BMI</button>
-</form>
