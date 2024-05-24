@@ -68,8 +68,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcQ2FydFxTdW1tYXJ5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/cux/OneDrive/Pulpit/GitRepo/FitnessApp/FitnessWeb/Areas/Customer/Views/DietsCategory/BIal.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcRGlldHNDYXRlZ29yeVxCSWFsLmNzaHRtbA==
+[C:/Users/cux/OneDrive/Pulpit/GitRepo/FitnessApp/FitnessWeb/Areas/Customer/Views/DietsCategory/Bial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcRGlldHNDYXRlZ29yeVxCaWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cux/OneDrive/Pulpit/GitRepo/FitnessApp/FitnessWeb/Areas/Customer/Views/DietsCategory/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcRGlldHNDYXRlZ29yeVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cux/OneDrive/Pulpit/GitRepo/FitnessApp/FitnessWeb/Areas/Customer/Views/DietsCategory/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcRGlldHNDYXRlZ29yeVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/cux/OneDrive/Pulpit/GitRepo/FitnessApp/FitnessWeb/Areas/Customer/Views/DietsCategory/Karni.cshtml]

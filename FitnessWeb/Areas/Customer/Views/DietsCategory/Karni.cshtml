@@ -1,33 +1,45 @@
-﻿@model List<Diet>
+﻿@model IEnumerable<Diet>
+<style>
+    .exercise-card {
+        margin-bottom: 30px;
+    }
 
-<div class="container">
-    <div class=" row pt-4 pb-2">
-        <div class=" col-6">
-            <h2 class="text-dark">
-                Nazwa diety
-            </h2>
-        </div>
-        <div class=" col-6 text-end">
-            <a asp-controller="Diet" asp-action="Upsert" class="btn btn-primary">
-                <i class="bi bi-journal-plus"></i> Dodaj dietę
-            </a>
-        </div>
-    </div>
+        .exercise-card img {
+            height: 200px;
+            object-fit: cover;
+        }
 
-    <table id="tblData" class="table table-bordered table-striped" style="width:100%">
-        <thead>
-            <tr>
-                <th>Dieta</th>
-                <th>Rodzaj diety</th>
-                <th>Kaloryczność</th>
-                <th>Opis</th>
-                <th>Cena</th>
-                <th></th>
-            </tr>
-        </thead>
-    </table>
+        .exercise-card .card-title,
+        .exercise-card .card-text {
+            color: white;
+        }
+
+</style>
+<div class="row pb-2">
+    @foreach (var diet in Model)
+    {
+        if (diet.DietsCategory.CategoryName == "Dieta Karniworska")
+        {
+
+            <div class="col-lg-4 col-md-6 exercise-card">
+                <div class="card h-100 card border-0 p-3 shadow border-top border-5 rounded">
+                    <img src="@diet.ImageUrl" class="card-img-top rounded">
+                    <div class="card-body pb-0">
+                        <div class="pl-1">
+                            <p class="card-title h5 text-dark opacity-75 text-uppercase text-center">@diet.DietName</p>
+                        </div>
+                        <div class="text-center">
+                            <a asp-action="Details"
+                               asp-route-dietId="@diet.Id" class="btn btn-primary bg-gradient border-0 form control">
+                                Szczegóły
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        }
+
+    }
 </div>
-
-@section Scripts{
-    <script src="~/js/karniDiet.js"></script>
-}

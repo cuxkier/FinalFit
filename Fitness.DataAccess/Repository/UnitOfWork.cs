@@ -29,6 +29,7 @@ namespace Fitness.DataAccess.Repository
             Diet = new DietRepository(_db);
             OrderHeader = new OrderHeaderRepository(_db);
             OrderDetail = new OrderDetailRepository(_db);
+            Progress = new ProgressRepository(_db);
         }
         public IDietsCategoryRepository IDietRepository {get; private set;}
 

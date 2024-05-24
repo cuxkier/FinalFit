@@ -1,0 +1,45 @@
+﻿@model ShoppingCart
+
+<form method="post">
+    <input hidden asp-for="DietId" />
+    <div class="card shadow border-0 mt-4 mb-4">
+        <div class="card-header bg-secondary bg-gradient text-light py-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h3 class="text-white text-uppercase">@Model.Diet.DietName</h3>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="row pb-2">
+                <div class="col-md-6">
+                    <img src="@Model.Diet.ImageUrl" width="100%" class="rounded" /><br /><br />
+                    <h6 class="text-white text-opacity-50">Kategoria: @Model.Diet.DietsCategory.CategoryName</h6><br />
+                </div>
+                <div class="col-md-6 text-center">
+                    <h6>Cena: </h6><div>@Model.Diet.Price.ToString("c", new System.Globalization.CultureInfo("pl-PL"))</div>
+                    <p class="text-secondary lh-sm">@Html.Raw(Model.Diet.Description)</p>
+                    <div class="input-group col-12 col-md-6 pb-1">
+                        <span class="input-group-text bg-primary text-white border-0 fw-semibold"
+                              id="inputGroup-sizing-default">
+                            Ilość
+                        </span>
+                        <input asp-for="Count" type="number" value="1" class="form-control text-center"
+                               aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" />
+
+                    </div>
+                    <div class="col-12 col-md-6 pb-1">
+                        <button type="submit"
+                                class="btn btn-primary bg-gradient w-100 py-2 text-uppercase fw-semibold">
+                            Dodaj do koszyka
+                        </button>
+                    </div>
+                    <div class="col-12 col-md-6 pb-1">
+                        <a asp-area="Customer" asp-controller="Home" asp-action="Index" class="btn btn-primary bg-gradient w-100 py-2 fw-semibold text-uppercase">
+                            Strona główna
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</form>

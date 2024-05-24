@@ -24,34 +24,34 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav me-auto">
-                        <li class="nav-item">
+                        <li class="nav-item">@*
                             <a class="nav-link text-dark" asp-area="Customer" asp-controller="Diet" asp-action="Index">Strona główna</a>
-                        </li>
+                        </li>*@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="Customer" asp-controller="Bmi" asp-action="Index">Kalkulator BMI</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item">@*
                             <a class="nav-link text-dark" asp-area="Admin" asp-controller="DietsCategory" asp-action="Index">Kategorie Diet</a>
-                        </li>
+                        </li>*@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Kategorie diet
                             </a>
                             <ul class="dropdown-menu">
                                 <li class="nav-item">
-                                    <a class="dropdown-item" asp-area="Customer" asp-controller="DietsCategory" asp-action="Index">Dieta Ketogeniczna</a>
+                                    <a class="dropdown-item" asp-area="Customer" asp-controller="DietsCategory" asp-action="Keto">Dieta Ketogeniczna</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="dropdown-item" asp-area="Customer" asp-controller="DietsCategory" asp-action="Index">Dieta Wegańska</a>
+                                    <a class="dropdown-item" asp-area="Customer" asp-controller="DietsCategory" asp-action="Wega">Dieta Wegańska</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="dropdown-item" asp-area="Customer" asp-controller="DietsCategory" asp-action="Index">Dieta Wegetariańska</a>
+                                    <a class="dropdown-item" asp-area="Customer" asp-controller="DietsCategory" asp-action="Wege">Dieta Wegetariańska</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="dropdown-item" asp-area="Customer" asp-controller="DietsCategory" asp-action="Index">Dieta Karniworska</a>
+                                    <a class="dropdown-item" asp-area="Customer" asp-controller="DietsCategory" asp-action="Karni">Dieta Karniworska</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="dropdown-item" asp-area="Customer" asp-controller="DietsCategory" asp-action="Index">Dieta Wysokobiałkowa</a>
+                                    <a class="dropdown-item" asp-area="Customer" asp-controller="DietsCategory" asp-action="Bial">Dieta Wysokobiałkowa</a>
                                 </li>
                                 @*                            	<li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>*@
@@ -64,6 +64,9 @@
                             <a class="nav-link text-dark" asp-area="Customer" asp-controller="OurDieters" asp-action="Index">Nasi dietetycy</a>
                         <li class="nav-item">
                             <a class="nav-link" asp-area="Customer" asp-controller="ExerciseAtlas" asp-action="Index">Atlas ćwiczeń</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="Customer" asp-controller="Progress" asp-action="Index">Dziennik</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav ml-auto">
@@ -80,8 +83,8 @@
                                     <li class="nav-item">
                                         <a class="dropdown-item" asp-area="Admin" asp-controller="Diet" asp-action="Index">Diety</a>
                                     </li>
-                                    <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+@*                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>*@
                                 </ul>
                             </li>
                         }
@@ -104,21 +107,14 @@
             @RenderBody()
         </main>
     </div>
-
-    <footer class="footer-card border-top text-muted border-3 d-flex flex-column max-vh-100 bg-primary bg-opacity-25">
-        <div class="row pb-2">
-            <div class="col-md-6 text-center">
-                Zapraszamy na <i class="bi bi-facebook"></i><br />
-                Autorzy:<br /> Adrianna Miemietz<br /> Mikołaj Miklas<br /> Paulina Kowalewska
-            </div>
-            <div class="col-md-6 text-center">
-                <a class="nav-link text-light" asp-area="Customer" asp-controller="Home" asp-action="Privacy">FAQ</a>
-                <a class="nav-link text-light" asp-area="Customer" asp-controller="Home" asp-action="Privacy">Kontakt</a>
-                <a class="nav-link text-light" asp-area="Customer" asp-controller="Home" asp-action="Privacy">Polityka prywatności</a>
-                <a class="nav-link text-light" asp-area="Customer" asp-controller="Home" asp-action="Privacy">Regulamin</a>
-            </div>
+    <footer class="border-top footer bg-primary text-muted">
+        <div class="container text-white text-center">
+            Zapraszamy na <i class="bi bi-facebook"></i> <i class="bi bi-dot"></i> Autorzy: Adrianna Miemietz, Mikołaj Miklas, Paulina Kowalewska
+            <i class="bi bi-dot"></i> FAQ <i class="bi bi-dot"></i> Kontakt <i class="bi bi-dot"></i> Polityka prywatności <i class="bi bi-dot"></i> Regulamin
         </div>
-    </footer>
+     </footer>
+
+
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

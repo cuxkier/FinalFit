@@ -1,19 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace Fitness.Models
 {
     public class Progress
     {
         public int Id { get; set; }
-        public DateTime Date { get; set; }
-        public double Weight { get; set; }
-        public string UserId { get; set; } // Identyfikator użytkownika
 
-        // Powiązanie z użytkownikiem
-        public ApplicationUser User { get; set; }
+        [Required]
+        [Range(0.1, double.MaxValue, ErrorMessage = "Weight must be greater than 0.")]
+        public double Weight { get; set; }
+
+        public DateTime Date { get; set; }
+
+        public string UserId { get; set; }
     }
 }

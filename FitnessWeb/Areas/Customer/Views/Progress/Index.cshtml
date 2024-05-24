@@ -1,10 +1,16 @@
 ﻿@model IEnumerable<Fitness.Models.Progress>
 
+@{
+    ViewData["Title"] = "Progress Journal";
+}
+
+<h2>Dziennik postępu</h2>
+
 <table class="table">
     <thead>
         <tr>
-            <th>Data</th>
-            <th>Waga (kg)</th>
+            <th>Data wpisu</th>
+            <th>Waga</th>
         </tr>
     </thead>
     <tbody>
@@ -17,3 +23,11 @@
         }
     </tbody>
 </table>
+
+<a asp-action="Add" class="btn btn-primary">Dodaj nowy wpis</a>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

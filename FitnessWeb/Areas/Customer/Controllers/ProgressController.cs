@@ -2,7 +2,6 @@
 using Fitness.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using System;
 using System.Security.Claims;
 
 namespace Fitness.Areas.Customer.Controllers
@@ -18,41 +17,39 @@ namespace Fitness.Areas.Customer.Controllers
             _unitOfWork = unitOfWork;
         }
 
-        // GET: /Customer/Progress/Add
+        public IActionResult Index()
+        {
+            var claimsIdentity = (ClaimsIdentity)User.Identity;
+            var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
+
+            var progressList = _unitOfWork.Progress.GetAll(p => p.UserId == userId);
+            return View(progressList);
+        }
+
         public IActionResult Add()
         {
             return View();
         }
 
-        // POST: /Customer/Progress/Add
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Add(Progress progress)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                // Ustawiamy bieżącą datę
+                var claimsIdentity = (ClaimsIdentity)User.Identity;
+                var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
+
+                progress.UserId = userId;
                 progress.Date = DateTime.Now;
 
-                // Pobieramy identyfikator użytkownika
-                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-                progress.UserId = userId;
-
-                //_unitOfWork.Progress.Add(progress);
+                _unitOfWork.Progress.Add(progress);
                 _unitOfWork.Save();
 
-                TempData["success"] = "Wpis dziennika postępów został dodany.";
                 return RedirectToAction(nameof(Index));
             }
+
             return View(progress);
         }
-
-        // GET: /Customer/Progress/Index
-        //public IActionResult Index()
-        //{
-        //    var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-        //    var progressList = _unitOfWork.Progress.GetAll(u => u.UserId == userId);
-        //    return View(progressList);
-        //}
     }
 }

@@ -24,6 +24,11 @@ namespace Fitness.Areas.Customer.Controllers
             IEnumerable<Diet> dietList = _unitOfWork.Diet.GetAll(includeProperties: "DietsCategory");
             return View(dietList);
         }
+        public IActionResult Index()
+        {
+            IEnumerable<Diet> dietList = _unitOfWork.Diet.GetAll(includeProperties: "DietsCategory");
+            return View(dietList);
+        }
         public IActionResult Wege()
         {
             IEnumerable<Diet> dietList = _unitOfWork.Diet.GetAll(includeProperties: "DietsCategory");
