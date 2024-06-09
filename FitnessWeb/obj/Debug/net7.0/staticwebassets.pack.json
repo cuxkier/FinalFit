@@ -101,6 +101,10 @@
       "PackagePath": "staticwebassets\\js\\ketoDiet.js"
     },
     {
+      "Id": "C:\\Users\\cux\\OneDrive\\Pulpit\\GitRepo\\FitnessApp\\FitnessWeb\\wwwroot\\js\\order.js",
+      "PackagePath": "staticwebassets\\js\\order.js"
+    },
+    {
       "Id": "C:\\Users\\cux\\OneDrive\\Pulpit\\GitRepo\\FitnessApp\\FitnessWeb\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

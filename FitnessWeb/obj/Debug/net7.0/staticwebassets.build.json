@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "SpsHp0xhP1KUHBlHge1ZLgPc7sK5Xh8m1MskzfcYDHI=",
+  "Hash": "BEMUT4v6q+uK4T/S7WDsUvQaaVCEtWoI8OprJpZHd20=",
   "Source": "FitnessWeb",
   "BasePath": "_content/FitnessWeb",
   "Mode": "Default",
@@ -1477,6 +1477,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\ketoDiet.js"
+    },
+    {
+      "Identity": "C:\\Users\\cux\\OneDrive\\Pulpit\\GitRepo\\FitnessApp\\FitnessWeb\\wwwroot\\js\\order.js",
+      "SourceId": "FitnessWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\cux\\OneDrive\\Pulpit\\GitRepo\\FitnessApp\\FitnessWeb\\wwwroot\\",
+      "BasePath": "_content/FitnessWeb",
+      "RelativePath": "js/order.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\order.js"
     },
     {
       "Identity": "C:\\Users\\cux\\OneDrive\\Pulpit\\GitRepo\\FitnessApp\\FitnessWeb\\wwwroot\\js\\site.js",

@@ -1082,3 +1082,4 @@ C:\Users\cux\OneDrive\Pulpit\GitRepo\FitnessApp\FitnessWeb\obj\Debug\net7.0\refi
 C:\Users\cux\OneDrive\Pulpit\GitRepo\FitnessApp\FitnessWeb\obj\Debug\net7.0\FitnessWeb.pdb
 C:\Users\cux\OneDrive\Pulpit\GitRepo\FitnessApp\FitnessWeb\obj\Debug\net7.0\FitnessWeb.genruntimeconfig.cache
 C:\Users\cux\OneDrive\Pulpit\GitRepo\FitnessApp\FitnessWeb\obj\Debug\net7.0\ref\FitnessWeb.dll
+C:\Users\cux\OneDrive\Pulpit\GitRepo\FitnessApp\FitnessWeb\bin\Debug\net7.0\Stripe.net.dll
