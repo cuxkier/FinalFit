@@ -9,7 +9,7 @@ namespace Fitness.Utility
     public static class SD
     {
         public const string Role_Customer = "Użytkownik";
-        public const string Role_Company = "Firma";
+        public const string Role_Company = "Konto firmowe";
         public const string Role_Admin = "Admin";
         public const string Role_Employee = "Pracownik";
 

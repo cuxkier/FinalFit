@@ -1,32 +1,4 @@
-﻿//var dataTable;
-
-//$(document).ready(function () {
-//    loadDataTable();
-//});
-
-//function loadDataTable() {
-//    dataTable = $('#tblData').DataTable({
-//        "ajax": { url: '/admin/user/getall' },
-//        "columns": [
-//            { data: 'name', "width": "5%" },
-//            { data: 'email', "width": "15%" },
-//            { data: 'phoneNumber', "width": "10%" },
-//            //{ data: 'description', "width": "75%" },
-//            { data: 'role', "width": "5%" },
-//            {
-//                data: 'id',
-//                "render": function (data) {
-//                    return `<div class="w-75 btn-group" role="group">
-//                <a href="/admin/user/upsert?id=${data}" class="btn btn-primary mx-2" <i class="bi bi-pencil-square"></i>Edytuj</a>
-//               </div>`
-//                },
-//                "width": "5%"
-//            }
-//        ]
-//    });
-//}
-
-var dataTable;
+﻿var dataTable;
 
 $(document).ready(function () {
     loadDataTable();
@@ -54,7 +26,7 @@ function loadDataTable() {
                                 <i class="bi bi-lock-fill"></i> Zablokuj
                             </a>
 
-                            <a class="btn btn-danger text-white" style="cursor:pointer; width:150px;">
+                            <a href="/admin/user/RoleManagment?userId=${data.id}" class="btn btn-danger text-white" style="cursor:pointer; width:150px;">
                                 <i class="bi bi-pencil-square"></i> Uprawnienia
                             </a>
                         </div>
@@ -66,7 +38,7 @@ function loadDataTable() {
                             <a onclick=LockUnlock('${data.id}') class="btn btn-success text-white" style="cursor:pointer; width:100px;">
                                 <i class="bi bi-unlock-fill"></i> Odblokuj
                             </a>
-                            <a class="btn btn-danger text-white" style="cursor:pointer; width:150px;">
+                            <a href="/admin/user/RoleManagment?userId=${data.id}" class="btn btn-danger text-white" style="cursor:pointer; width:150px;">
                                 <i class="bi bi-pencil-square"></i> Uprawnienia
                             </a>
                         </div>

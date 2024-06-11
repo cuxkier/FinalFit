@@ -1,0 +1,59 @@
+﻿@model RoleManagmentVM
+
+<form method="post">
+    <div class="border p-3 mt-4">
+        <div class="rob pb-2">
+            <h2 class="text-primary">Zarządzaj uprawnieniami użytkownika</h2>
+            <hr />
+        </div>
+        <div asp-validation-summary="All"></div> <!--bledy walidacji wyskakuja u gory, a nie pod polami-->
+        <div class="mb-3 row p-1">
+            <input asp-for="ApplicationUser.Id" hidden />
+            <label asp-for="ApplicationUser.Name" readonly class="p-0"></label>
+            <input asp-for="ApplicationUser.Name" type="text" class="form-control" />
+        </div>
+        <div class="mb-3 row p-1">
+            <select asp-for="ApplicationUser.Role" asp-items="@Model.RoleList" class="from-select"></select>
+        </div>
+        @{
+            var companyVisible = "display:none;";
+        }
+        @if (Model.ApplicationUser.Role == SD.Role_Company)
+        {
+            companyVisible = "display:block;";
+        }
+        <div class="mb-3 row p-1">
+            <select asp-for="ApplicationUser.CompanyId" style="@companyVisible" asp-items="@Model.CompanyList" class="from-select"></select>
+        </div>
+
+        <div class="row">
+            <div class="col-6 col-md-3">
+                <button type="submit" class="btn btn-primary form-control">Edytuj</button>
+            </div>
+            <div class="col-6 col-md-3">
+                <a asp-action="Index" class="btn btn-secondary border form-control">
+                    Wróć do listy
+                </a>
+            </div>
+        </div>
+    </div>
+</form>
+
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+    <script>
+        $(document).ready(function () {
+            $('#Input_Role').change(function () {
+                var selection = $('#ApplicationUser_Role Option:Selected').text();
+                if (selection == 'Company') {
+                    $('#ApplicationUser_CompanyId').show();
+                }
+                else {
+                    $('#ApplicationUser_CompanyId').hide();
+                }
+            })
+        })
+    </script>
+}
