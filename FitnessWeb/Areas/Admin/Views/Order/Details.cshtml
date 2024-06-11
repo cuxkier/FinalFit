@@ -238,7 +238,10 @@
                                     </div>
                                 </li>
                             </ul>
-                            @*                            <button type="submit" class="btn btn-success form-control my-1">Zapłać teraz</button>*@
+                            @if (Model.OrderHeader.PaymentStatus == SD.StatusShipped)
+                            {
+                                <button type="submit" class="btn btn-success form-control my-1">Zapłać teraz</button>
+                            }
                             @if (User.IsInRole(SD.Role_Admin) || User.IsInRole(SD.Role_Employee))
                             {
                                 @if (Model.OrderHeader.OrderStatus == SD.StatusApproved)
@@ -250,12 +253,14 @@
                                 }
                                 @if (Model.OrderHeader.OrderStatus == SD.StatusInProcess)
                                 {
-                                    <button type="submit" onclick="return validateInput()" class="btn btn-primary form-control my-1">Zamów wysyłkę</button>
+                                    <button type="submit" asp-action="ShipOrder" 
+                                    onclick="return validateInput()" class="btn btn-primary form-control my-1">Zamów wysyłkę</button>
                                 }
-                                @if (Model.OrderHeader.OrderStatus != SD.StatusRefund &&
-                               Model.OrderHeader.OrderStatus != SD.StatusShipped)
+                                @if (Model.OrderHeader.OrderStatus != SD.StatusRefunded &&
+                                Model.OrderHeader.OrderStatus != SD.StatusCancelled &&
+                                Model.OrderHeader.OrderStatus != SD.StatusShipped)
                                 {
-                                    <button type="submit" class="btn btn-danger form-control my-1">Anuluj zamówienie</button>
+                                    <button type="submit" asp-action="CancelOrder" class="btn btn-danger form-control my-1">Anuluj zamówienie</button>
                                 }
                             }
                         </div>

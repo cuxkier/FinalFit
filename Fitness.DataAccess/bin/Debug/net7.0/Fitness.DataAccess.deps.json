@@ -13,7 +13,8 @@
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.18",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.18",
-          "Microsoft.EntityFrameworkCore.Tools": "7.0.18"
+          "Microsoft.EntityFrameworkCore.Tools": "7.0.18",
+          "RestSharp": "111.2.0"
         },
         "runtime": {
           "Fitness.DataAccess.dll": {}
@@ -765,6 +766,14 @@
           "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.1.20722"
+          }
+        }
+      },
+      "RestSharp/111.2.0": {
+        "runtime": {
+          "lib/net7.0/RestSharp.dll": {
+            "assemblyVersion": "111.2.0.0",
+            "fileVersion": "111.2.0.0"
           }
         }
       },
@@ -1521,7 +1530,8 @@
       },
       "Fitness.Models/1.0.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.2.0"
+          "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.2.0",
+          "RestSharp": "111.2.0"
         },
         "runtime": {
           "Fitness.Models.dll": {}
@@ -1529,7 +1539,8 @@
       },
       "Fitness.Utility/1.0.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Identity.UI": "7.0.18"
+          "Microsoft.AspNetCore.Identity.UI": "7.0.18",
+          "RestSharp": "111.2.0"
         },
         "runtime": {
           "Fitness.Utility.dll": {}
@@ -2109,6 +2120,13 @@
       "sha512": "sha512-5PYT/IqQ+UK31AmZiSS102R6EsTo+LGTSI8bp7WAUqDKaF4wHXD8U9u4WxTI1vc64tYi++8p3dk3WWNqPFgldw==",
       "path": "newtonsoft.json.bson/1.0.1",
       "hashPath": "newtonsoft.json.bson.1.0.1.nupkg.sha512"
+    },
+    "RestSharp/111.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OkWr6AGM0zirdkRpxVOxXMWx9OHEIWrDzrpx1XIx5KyvTcmtjJVsKBscVkYTcFerhj5w5Bny7boRIV4a0ENGaQ==",
+      "path": "restsharp/111.2.0",
+      "hashPath": "restsharp.111.2.0.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
       "type": "package",

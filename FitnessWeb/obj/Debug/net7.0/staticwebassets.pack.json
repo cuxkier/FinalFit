@@ -89,6 +89,10 @@
       "PackagePath": "staticwebassets\\js\\bialDiet.js"
     },
     {
+      "Id": "C:\\Users\\cux\\OneDrive\\Pulpit\\GitRepo\\FitnessApp\\FitnessWeb\\wwwroot\\js\\company.js",
+      "PackagePath": "staticwebassets\\js\\company.js"
+    },
+    {
       "Id": "C:\\Users\\cux\\OneDrive\\Pulpit\\GitRepo\\FitnessApp\\FitnessWeb\\wwwroot\\js\\diet.js",
       "PackagePath": "staticwebassets\\js\\diet.js"
     },
@@ -107,6 +111,10 @@
     {
       "Id": "C:\\Users\\cux\\OneDrive\\Pulpit\\GitRepo\\FitnessApp\\FitnessWeb\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\cux\\OneDrive\\Pulpit\\GitRepo\\FitnessApp\\FitnessWeb\\wwwroot\\js\\user.js",
+      "PackagePath": "staticwebassets\\js\\user.js"
     },
     {
       "Id": "C:\\Users\\cux\\OneDrive\\Pulpit\\GitRepo\\FitnessApp\\FitnessWeb\\wwwroot\\js\\wegaDiet.js",

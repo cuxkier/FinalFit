@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BEMUT4v6q+uK4T/S7WDsUvQaaVCEtWoI8OprJpZHd20=",
+  "Hash": "+qtIBynJfIv2UiOJo3OBCjjeWNM9cZjVIJYsX1FFAr8=",
   "Source": "FitnessWeb",
   "BasePath": "_content/FitnessWeb",
   "Mode": "Default",
@@ -1428,6 +1428,23 @@
       "OriginalItemSpec": "wwwroot\\js\\bialDiet.js"
     },
     {
+      "Identity": "C:\\Users\\cux\\OneDrive\\Pulpit\\GitRepo\\FitnessApp\\FitnessWeb\\wwwroot\\js\\company.js",
+      "SourceId": "FitnessWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\cux\\OneDrive\\Pulpit\\GitRepo\\FitnessApp\\FitnessWeb\\wwwroot\\",
+      "BasePath": "_content/FitnessWeb",
+      "RelativePath": "js/company.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\company.js"
+    },
+    {
       "Identity": "C:\\Users\\cux\\OneDrive\\Pulpit\\GitRepo\\FitnessApp\\FitnessWeb\\wwwroot\\js\\diet.js",
       "SourceId": "FitnessWeb",
       "SourceType": "Discovered",
@@ -1511,6 +1528,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "C:\\Users\\cux\\OneDrive\\Pulpit\\GitRepo\\FitnessApp\\FitnessWeb\\wwwroot\\js\\user.js",
+      "SourceId": "FitnessWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\cux\\OneDrive\\Pulpit\\GitRepo\\FitnessApp\\FitnessWeb\\wwwroot\\",
+      "BasePath": "_content/FitnessWeb",
+      "RelativePath": "js/user.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\user.js"
     },
     {
       "Identity": "C:\\Users\\cux\\OneDrive\\Pulpit\\GitRepo\\FitnessApp\\FitnessWeb\\wwwroot\\js\\wegaDiet.js",

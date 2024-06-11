@@ -1,6 +1,8 @@
 ﻿using Fitness.DataAccess.Repository.IRepository;
 using Fitness.Models;
+using Fitness.Utility;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using System.Security.Claims;
@@ -51,17 +53,17 @@ namespace Fitness.Areas.Customer.Controllers
                 //koszyk istnieje
                 cartFromDb.Count += shoppingCart.Count;
                 _unitOfWork.ShoppingCart.Update(cartFromDb);
+                _unitOfWork.Save();
             }
             else
             {
                 //dodaj koszyk
                 _unitOfWork.ShoppingCart.Add(shoppingCart);
+                _unitOfWork.Save();
+                HttpContext.Session.SetInt32(SD.SessionCart, 
+                _unitOfWork.ShoppingCart.GetAll(u => u.ApplicationUserId == userId).Count());
             }
-
             TempData["success"] = "Koszyk został zaktualizowany.";
-            _unitOfWork.Save();
-
-
             return RedirectToAction(nameof(Index));
         }
 

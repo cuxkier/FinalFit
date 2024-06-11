@@ -8,21 +8,24 @@ namespace Fitness.Utility
 {
     public static class SD
     {
-        public const string Role_Customer = "Customer";
-        public const string Role_Company = "Company";
+        public const string Role_Customer = "Użytkownik";
+        public const string Role_Company = "Firma";
         public const string Role_Admin = "Admin";
-        public const string Role_Employee = "Employee";
+        public const string Role_Employee = "Pracownik";
 
-        public const string StatusPending = "Pending";
-        public const string StatusApproved = "Approved";
-        public const string StatusInProcess = "Processing";
-        public const string StatusShipped = "Shipped";
-        public const string StatusRefund = "Refunded";
-        public const string StatusCancelled = "Cancelled";
+        public const string StatusPending = "Oczekujące";
+        public const string StatusApproved = "Zaakceptowane";
+        public const string StatusInProcess = "Procesowane";
+        public const string StatusShipped = "Wysłane";
+        public const string StatusRefunded = "Zwrócone";
+        public const string StatusCancelled = "Anulowane";
 
-        public const string PaymentStatusPending = "Pending";
-        public const string PaymentStatusApproved = "Approved";
+        public const string PaymentStatusPending = "Oczekujące";
+        public const string PaymentStatusApproved = "Zaakceptowane";
         public const string PaymentStatusDelayedPayment = "ApprovedForDelayedPayement";
-        public const string PaymentStatusRejected = "Rejected";
+        public const string PaymentStatusRejected = "Odrzucone";
+
+        public const string SessionCart = "SessionShoppingCart";
+
     }
 }

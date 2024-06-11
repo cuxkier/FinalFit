@@ -14,6 +14,7 @@ namespace Fitness.DataAccess.Repository.IRepository
         IApplicationUserRepository ApplicationUser { get; }
         IOrderDetailRepository OrderDetail { get; }
         IOrderHeaderRepository OrderHeader { get; }
+        ICompanyRepository Company { get; }
 
         IProgressRepository Progress { get; }
 
