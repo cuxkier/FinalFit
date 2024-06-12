@@ -1084,3 +1084,11 @@ C:\Users\cux\OneDrive\Pulpit\GitRepo\FitnessApp\FitnessWeb\obj\Debug\net7.0\Fitn
 C:\Users\cux\OneDrive\Pulpit\GitRepo\FitnessApp\FitnessWeb\obj\Debug\net7.0\ref\FitnessWeb.dll
 C:\Users\cux\OneDrive\Pulpit\GitRepo\FitnessApp\FitnessWeb\bin\Debug\net7.0\Stripe.net.dll
 C:\Users\cux\OneDrive\Pulpit\GitRepo\FitnessApp\FitnessWeb\bin\Debug\net7.0\RestSharp.dll
+C:\Users\cux\OneDrive\Pulpit\GitRepo\FitnessApp\FitnessWeb\bin\Debug\net7.0\BouncyCastle.Crypto.dll
+C:\Users\cux\OneDrive\Pulpit\GitRepo\FitnessApp\FitnessWeb\bin\Debug\net7.0\BouncyCastle.Cryptography.dll
+C:\Users\cux\OneDrive\Pulpit\GitRepo\FitnessApp\FitnessWeb\bin\Debug\net7.0\itextsharp.dll
+C:\Users\cux\OneDrive\Pulpit\GitRepo\FitnessApp\FitnessWeb\bin\Debug\net7.0\MailKit.dll
+C:\Users\cux\OneDrive\Pulpit\GitRepo\FitnessApp\FitnessWeb\bin\Debug\net7.0\MimeKit.dll
+C:\Users\cux\OneDrive\Pulpit\GitRepo\FitnessApp\FitnessWeb\bin\Debug\net7.0\System.Formats.Asn1.dll
+C:\Users\cux\OneDrive\Pulpit\GitRepo\FitnessApp\FitnessWeb\bin\Debug\net7.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\cux\OneDrive\Pulpit\GitRepo\FitnessApp\FitnessWeb\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Security.Cryptography.Pkcs.dll
